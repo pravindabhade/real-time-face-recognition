@@ -1,25 +1,27 @@
-# Real-Time Face Recognition (OpenCV + CNN + Flask)
+# Release v1.0.0 — Real-Time Face Recognition
 
-## Overview
-A simple real-time face detection and recognition system using:
-- OpenCV for video capture and face detection (Haar cascade)
-- TensorFlow/Keras CNN for face classification
-- Flask to serve a live annotated video feed in the browser
+**Release date:** 28-Nov-2025
 
-## Files
-- `app.py` — Flask app and video stream
-- `face_recognition.py` — FaceRecognizer class that loads model & annotates frames
-- `model_training.py` — Training script to build a CNN model from `dataset/`
-- `requirements.txt` — Python dependencies
-- `templates/index.html` — Web UI
-- `static/style.css` — Basic CSS
-- `models/face_cnn_model.h5` — Trained model (not included)
-- `models/label_map.json` — Label map saved during training
+## Summary
+Initial public release of the Real-Time Face Recognition project.  
+Features:
+- Real-time face detection (OpenCV Haar cascade)
+- CNN-based face classification using TensorFlow/Keras
+- Flask-based web UI to stream annotated video
+- Training script to build your own model from `dataset/`
+- Sample small model generation script (for testing)
 
-## Quick Start
+## Files included
+- `app.py` — Flask server + webcam streaming
+- `face_recognition.py` — FaceRecognizer class (loads model & annotates frames)
+- `model_training.py` — Training script
+- `requirements.txt` — Required Python packages
+- `templates/index.html`, `static/style.css` — UI
+- (Optional) `models/face_cnn_model.h5` — Sample/trained model (attached as release asset)
+- `models/label_map.json` — label map for model
 
-1. **Clone / Create project folder**
+## How to run
+1. Clone the repo:
    ```bash
-   git clone <your-repo>    # or copy files into folder
-   cd real-time-face-recognition
-"# real-time-face-recognition" 
+   git clone https://github.com/<your-username>/<your-repo>.git
+   cd <your-repo>
