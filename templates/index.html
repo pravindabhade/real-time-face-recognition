@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Real-Time Face Recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Real-Time Face Recognition</h1>
+    <p>Live webcam feed with CNN-based face recognition.</p>
+
+    <div class="video">
+      <img src="{{ url_for('video_feed') }}" alt="Live video feed">
+    </div>
+
+    <div class="notes">
+      <ul>
+        <li>Make sure your webcam is free (close other apps like Zoom).</li>
+        <li>Model: <code>models/face_cnn_model.h5</code></li>
+        <li>Label map: <code>models/label_map.json</code></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

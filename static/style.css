@@ -1,0 +1,27 @@
+/* static/style.css - simple styling for the demo page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fb;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video img {
+  width: 80%;
+  max-width: 720px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.notes {
+  margin-top: 12px;
+  text-align: left;
+  display: inline-block;
+}
